@@ -14,8 +14,8 @@
         
         body {
             font-family: 'Comic Sans MS', 'Marker Felt', '微软雅黑', sans-serif;
-            background-color: #FFF5E6;
-            color: #8B5A2B;
+            background-color: #FFF9F2;
+            color: #6D4C41;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -30,22 +30,22 @@
         h1 {
             font-size: min(3rem, 8vw);
             margin: 5px 0;
-            color: #FF9AA2;
-            text-shadow: 2px 2px 0 #FFDAC1;
+            color: #D4A59A;
+            text-shadow: 2px 2px 0 #F3E5D8;
         }
 
         .subtitle {
-            color: #B5EAD7;
+            color: #A1887F;
             margin-bottom: 15px;
             font-size: min(1.2rem, 4vw);
             text-align: center;
         }
 
         .game-container {
-            background-color: #FFDAC1;
+            background-color: #F3E5D8;
             border-radius: 15px;
             padding: 15px;
-            box-shadow: 0 10px 20px rgba(139, 90, 43, 0.2);
+            box-shadow: 0 10px 20px rgba(109, 76, 65, 0.2);
             position: relative;
             overflow: hidden;
             width: 100%;
@@ -61,7 +61,7 @@
         }
 
         .score-container {
-            background-color: #E2F0CB;
+            background-color: #E6D5C3;
             border-radius: 8px;
             padding: 8px 12px;
             text-align: center;
@@ -71,17 +71,17 @@
 
         .score-title {
             font-size: 0.8rem;
-            color: #8B5A2B;
+            color: #6D4C41;
         }
 
         .score-value {
             font-size: 1.3rem;
             font-weight: bold;
-            color: #FF9AA2;
+            color: #D4A59A;
         }
 
         .grid-container {
-            background-color: #B5EAD7;
+            background-color: #D7CCC8;
             border-radius: 8px;
             padding: 10px;
             margin-bottom: 15px;
@@ -102,14 +102,14 @@
         .grid-cell {
             flex: 1;
             margin-right: 10px;
-            background-color: #FFE5D9;
+            background-color: #EFEBE9;
             border-radius: 5px;
             display: flex;
             justify-content: center;
             align-items: center;
             font-weight: bold;
-            color: #8B5A2B;
-            box-shadow: inset 0 0 10px rgba(255, 154, 162, 0.3);
+            color: #6D4C41;
+            box-shadow: inset 0 0 10px rgba(212, 165, 154, 0.2);
             aspect-ratio: 1/1;
         }
 
@@ -124,71 +124,71 @@
             justify-content: center;
             align-items: center;
             font-weight: bold;
-            transition: all 0.1s ease-in-out;
+            transition: all 0.15s ease-in-out;
             z-index: 10;
             aspect-ratio: 1/1;
             font-size: 1.5rem;
         }
 
         .tile-2 {
-            background-color: #FFD1DC;
-            color: #8B5A2B;
+            background-color: #F5E6E8;
+            color: #6D4C41;
         }
 
         .tile-4 {
-            background-color: #FFB7B2;
-            color: #8B5A2B;
+            background-color: #E8D5D1;
+            color: #6D4C41;
         }
 
         .tile-8 {
-            background-color: #FF9AA2;
+            background-color: #D4A59A;
             color: white;
         }
 
         .tile-16 {
-            background-color: #FF8C94;
+            background-color: #C99789;
             color: white;
         }
 
         .tile-32 {
-            background-color: #FF7F82;
+            background-color: #BF877A;
             color: white;
         }
 
         .tile-64 {
-            background-color: #FF6F72;
+            background-color: #B5796B;
             color: white;
         }
 
         .tile-128 {
-            background-color: #E2F0CB;
-            color: #8B5A2B;
+            background-color: #E6D5C3;
+            color: #6D4C41;
             font-size: 1.4rem;
         }
 
         .tile-256 {
-            background-color: #B5EAD7;
-            color: #8B5A2B;
+            background-color: #D7CCC8;
+            color: #6D4C41;
             font-size: 1.4rem;
         }
 
         .tile-512 {
-            background-color: #C7CEEA;
+            background-color: #C8B6A6;
             color: white;
             font-size: 1.4rem;
         }
 
         .tile-1024 {
-            background-color: #A2D7D8;
+            background-color: #B8A99A;
             color: white;
             font-size: 1.2rem;
         }
 
         .tile-2048 {
-            background-color: #FFDAC1;
-            color: #FF9AA2;
+            background-color: #F3E5D8;
+            color: #D4A59A;
             font-size: 1.2rem;
-            box-shadow: 0 0 15px #FF9AA2;
+            box-shadow: 0 0 15px #D4A59A;
         }
 
         .game-message {
@@ -197,7 +197,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background-color: rgba(255, 218, 193, 0.9);
+            background-color: rgba(243, 229, 216, 0.9);
             z-index: 100;
             display: flex;
             flex-direction: column;
@@ -209,11 +209,11 @@
         }
 
         .game-message.game-won {
-            background-color: rgba(181, 234, 215, 0.9);
+            background-color: rgba(215, 204, 200, 0.9);
         }
 
         .game-message.game-over {
-            background-color: rgba(255, 154, 162, 0.9);
+            background-color: rgba(212, 165, 154, 0.9);
         }
 
         .game-message p {
@@ -221,10 +221,11 @@
             font-weight: bold;
             margin: 0 0 15px;
             text-align: center;
+            color: #6D4C41;
         }
 
         .btn {
-            background-color: #FF9AA2;
+            background-color: #D4A59A;
             color: white;
             border: none;
             border-radius: 30px;
@@ -232,7 +233,7 @@
             font-size: 0.9rem;
             font-weight: bold;
             cursor: pointer;
-            box-shadow: 0 4px 0 #FF7F82;
+            box-shadow: 0 4px 0 #BF877A;
             transition: all 0.1s;
             margin: 5px;
             width: 100%;
@@ -241,33 +242,33 @@
 
         .btn:active {
             transform: translateY(2px);
-            box-shadow: 0 2px 0 #FF7F82;
+            box-shadow: 0 2px 0 #BF877A;
         }
 
         .btn-restart {
-            background-color: #B5EAD7;
-            box-shadow: 0 4px 0 #A2D7D8;
-            color: #8B5A2B;
+            background-color: #D7CCC8;
+            box-shadow: 0 4px 0 #B8A99A;
+            color: #6D4C41;
         }
 
         .btn-restart:active {
-            box-shadow: 0 2px 0 #A2D7D8;
+            box-shadow: 0 2px 0 #B8A99A;
         }
 
         .btn-keep-playing {
-            background-color: #FFDAC1;
-            box-shadow: 0 4px 0 #FFB7B2;
-            color: #8B5A2B;
+            background-color: #F3E5D8;
+            box-shadow: 0 4px 0 #E8D5D1;
+            color: #6D4C41;
         }
 
         .btn-keep-playing:active {
-            box-shadow: 0 2px 0 #FFB7B2;
+            box-shadow: 0 2px 0 #E8D5D1;
         }
 
         .instructions {
             margin-top: 15px;
             text-align: center;
-            color: #8B5A2B;
+            color: #6D4C41;
             max-width: 400px;
             font-size: 0.9rem;
             padding: 0 10px;
@@ -285,7 +286,7 @@
         .arrow-btn {
             width: 50px;
             height: 50px;
-            background-color: #FF9AA2;
+            background-color: #D4A59A;
             border-radius: 50%;
             display: flex;
             justify-content: center;
@@ -295,13 +296,13 @@
             margin: 4px;
             cursor: pointer;
             user-select: none;
-            box-shadow: 0 3px 0 #FF7F82;
+            box-shadow: 0 3px 0 #BF877A;
             position: relative;
         }
         
         .arrow-btn:active {
             transform: translateY(2px);
-            box-shadow: 0 1px 0 #FF7F82;
+            box-shadow: 0 1px 0 #BF877A;
         }
         
         .arrow-row {
@@ -435,6 +436,7 @@
             let waitingForAnimation = false;
             let cellSize = 0;
             let gridPadding = 0;
+            let tiles = {};
             
             bestScoreDisplay.textContent = bestScore;
             
@@ -460,6 +462,7 @@
                 gameOver = false;
                 gameWon = false;
                 waitingForAnimation = false;
+                tiles = {};
                 
                 scoreDisplay.textContent = '0';
                 gameMessage.style.display = 'none';
@@ -470,8 +473,6 @@
                 // 添加两个初始方块
                 addRandomTile();
                 addRandomTile();
-                
-                updateView();
             }
             
             // 添加随机方块
@@ -493,65 +494,53 @@
                     const { row, col } = emptyCells[Math.floor(Math.random() * emptyCells.length)];
                     grid[row][col] = value;
                     
-                    // 创建新方块的动画
-                    const tile = document.createElement('div');
-                    tile.className = `tile tile-${value}`;
-                    tile.textContent = value;
-                    tile.style.width = `${cellSize}px`;
-                    tile.style.height = `${cellSize}px`;
-                    tile.style.top = `${row * (cellSize + 10) + gridPadding}px`;
-                    tile.style.left = `${col * (cellSize + 10) + gridPadding}px`;
-                    tile.style.transform = 'scale(0)';
-                    
-                    gridContainer.appendChild(tile);
-                    
-                    setTimeout(() => {
-                        tile.style.transform = 'scale(1)';
-                    }, 10);
+                    // 创建新方块
+                    createTile(row, col, value);
                 }
             }
             
-            // 更新视图
-            function updateView() {
-                const tiles = document.querySelectorAll('.tile');
-                const cellGap = 10; // 单元格之间的间隙
+            // 创建方块
+            function createTile(row, col, value) {
+                const tileId = `${row}-${col}`;
                 
-                for (let row = 0; row < 4; row++) {
-                    for (let col = 0; col < 4; col++) {
-                        const value = grid[row][col];
-                        const expectedTop = row * (cellSize + cellGap) + gridPadding;
-                        const expectedLeft = col * (cellSize + cellGap) + gridPadding;
-                        
-                        let tile = Array.from(tiles).find(t => 
-                            parseInt(t.style.top) === expectedTop && 
-                            parseInt(t.style.left) === expectedLeft
-                        );
-                        
-                        if (value === 0 && tile) {
-                            tile.remove();
-                        } else if (value !== 0) {
-                            if (!tile) {
-                                tile = document.createElement('div');
-                                tile.className = `tile tile-${value}`;
-                                tile.textContent = value;
-                                tile.style.width = `${cellSize}px`;
-                                tile.style.height = `${cellSize}px`;
-                                tile.style.top = `${expectedTop}px`;
-                                tile.style.left = `${expectedLeft}px`;
-                                gridContainer.appendChild(tile);
-                            } else {
-                                tile.className = `tile tile-${value}`;
-                                tile.textContent = value;
-                            }
-                        }
-                    }
+                // 如果已有该位置的方块，先移除
+                if (tiles[tileId]) {
+                    tiles[tileId].element.remove();
                 }
+                
+                const tile = document.createElement('div');
+                tile.className = `tile tile-${value}`;
+                tile.textContent = value;
+                tile.style.width = `${cellSize}px`;
+                tile.style.height = `${cellSize}px`;
+                
+                // 初始位置和缩放
+                tile.style.top = `${row * (cellSize + 10) + gridPadding}px`;
+                tile.style.left = `${col * (cellSize + 10) + gridPadding}px`;
+                tile.style.transform = 'scale(0)';
+                
+                gridContainer.appendChild(tile);
+                
+                // 保存方块引用
+                tiles[tileId] = {
+                    element: tile,
+                    row,
+                    col,
+                    value
+                };
+                
+                // 添加出现动画
+                setTimeout(() => {
+                    tile.style.transform = 'scale(1)';
+                }, 10);
             }
             
             // 移动方块
             function moveTiles(direction) {
                 if (waitingForAnimation || gameOver) return;
                 
+                // 保存移动前的网格状态
+                const oldGrid = JSON.parse(JSON.stringify(grid));
                 let moved = false;
                 
                 // 根据方向处理移动
@@ -572,12 +561,57 @@
                 
                 if (moved) {
                     waitingForAnimation = true;
+                    
+                    // 更新所有方块的位置
+                    updateTilesPosition(oldGrid);
+                    
                     setTimeout(() => {
+                        // 添加新方块
                         addRandomTile();
-                        updateView();
+                        
+                        // 检查游戏状态
                         checkGameStatus();
                         waitingForAnimation = false;
                     }, 150);
+                }
+            }
+            
+            // 更新所有方块的位置
+            function updateTilesPosition(oldGrid) {
+                // 首先移除所有合并的方块
+                Object.keys(tiles).forEach(tileId => {
+                    const [row, col] = tileId.split('-').map(Number);
+                    if (grid[row][col] === 0) {
+                        tiles[tileId].element.remove();
+                        delete tiles[tileId];
+                    }
+                });
+                
+                // 然后更新所有方块的位置和值
+                for (let row = 0; row < 4; row++) {
+                    for (let col = 0; col < 4; col++) {
+                        const value = grid[row][col];
+                        if (value !== 0) {
+                            const tileId = `${row}-${col}`;
+                            const tile = tiles[tileId];
+                            
+                            if (tile) {
+                                // 更新方块的值（如果合并了）
+                                if (tile.value !== value) {
+                                    tile.value = value;
+                                    tile.element.className = `tile tile-${value}`;
+                                    tile.element.textContent = value;
+                                }
+                                
+                                // 设置新位置
+                                tile.element.style.top = `${row * (cellSize + 10) + gridPadding}px`;
+                                tile.element.style.left = `${col * (cellSize + 10) + gridPadding}px`;
+                            } else {
+                                // 创建新方块（从其他位置移动过来的）
+                                createTile(row, col, value);
+                            }
+                        }
+                    }
                 }
             }
             
@@ -811,13 +845,17 @@
             // 鼠标事件
             let mouseDownX = 0;
             let mouseDownY = 0;
+            let isMouseDown = false;
             
             gridContainer.addEventListener('mousedown', (e) => {
                 mouseDownX = e.clientX;
                 mouseDownY = e.clientY;
+                isMouseDown = true;
             });
             
-            gridContainer.addEventListener('mouseup', (e) => {
+            document.addEventListener('mouseup', (e) => {
+                if (!isMouseDown) return;
+                
                 const dx = e.clientX - mouseDownX;
                 const dy = e.clientY - mouseDownY;
                 
@@ -828,11 +866,12 @@
                 
                 mouseDownX = 0;
                 mouseDownY = 0;
+                isMouseDown = false;
             });
             
             // 防止拖动时选中文本
             gridContainer.addEventListener('selectstart', (e) => {
-                if (mouseDownX !== 0 || mouseDownY !== 0) {
+                if (isMouseDown) {
                     e.preventDefault();
                 }
             });
@@ -844,8 +883,7 @@
             gridContainer.addEventListener('touchstart', (e) => {
                 touchStartX = e.touches[0].clientX;
                 touchStartY = e.touches[0].clientY;
-                e.preventDefault();
-            }, { passive: false });
+            }, { passive: true });
             
             gridContainer.addEventListener('touchmove', (e) => {
                 e.preventDefault();
@@ -866,7 +904,7 @@
                 
                 touchStartX = 0;
                 touchStartY = 0;
-            }, { passive: false });
+            }, { passive: true });
             
             // 控制按钮事件
             document.getElementById('up-btn').addEventListener('click', () => moveTiles('up'));
@@ -895,7 +933,14 @@
             // 窗口大小变化时重新计算
             window.addEventListener('resize', () => {
                 calculateCellSize();
-                updateView();
+                // 更新所有方块的大小和位置
+                Object.keys(tiles).forEach(tileId => {
+                    const tile = tiles[tileId];
+                    tile.element.style.width = `${cellSize}px`;
+                    tile.element.style.height = `${cellSize}px`;
+                    tile.element.style.top = `${tile.row * (cellSize + 10) + gridPadding}px`;
+                    tile.element.style.left = `${tile.col * (cellSize + 10) + gridPadding}px`;
+                });
             });
             
             // 触摸设备检测
